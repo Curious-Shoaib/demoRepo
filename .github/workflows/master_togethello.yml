@@ -22,7 +22,6 @@ jobs:
           java-version: '17'
 
       - name: Build with Maven
-        working-directory: ./demoRepo
         run: mvn clean install -DskipTests
 
       - name: Upload artifact for deployment job
